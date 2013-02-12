@@ -294,6 +294,7 @@
                 django.jQuery.fn.formset = function (opts) {
                     var options = $.extend({}, opts);
                     var addedevent = function (row) {
+                        $(row).find('button').remove();
                         bindSelectables($(row));
                     };
                     var added = null;
